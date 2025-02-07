@@ -8,7 +8,7 @@ class Account extends Component {
     return (
       <>
         <Navbar expand="lg" className="bg-dark navbar-dark">
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="#home" onClick={() => this.props.changeState("home")}>
             <img src={logo} alt="logo" width="100px" />
           </Navbar.Brand>
         </Navbar>

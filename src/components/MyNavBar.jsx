@@ -21,7 +21,7 @@ class MyNavBar extends Component {
     return (
       <Navbar expand="lg" className="bg-dark navbar-dark">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="#home" onClick={() => this.props.changeState("home")}>
             <img src={logo} alt="logo" width="100px" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" className="border border-white" />
@@ -68,8 +68,12 @@ class MyNavBar extends Component {
                     </Dropdown.Toggle>
 
                     <Dropdown.Menu>
-                      <Dropdown.Item href="#/action-1">Edit Profile</Dropdown.Item>
-                      <Dropdown.Item href="#/action-2">Settings</Dropdown.Item>
+                      <Dropdown.Item href="#/action-1" onClick={() => this.props.changeState("account")}>
+                        Edit Profile
+                      </Dropdown.Item>
+                      <Dropdown.Item href="#/action-2" onClick={() => this.props.changeState("settings")}>
+                        Settings
+                      </Dropdown.Item>
                       <Dropdown.Item href="#/action-3">Logout</Dropdown.Item>
                     </Dropdown.Menu>
                   </Dropdown>
