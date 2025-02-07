@@ -24,7 +24,7 @@ class Account extends Component {
                 </div>
               </div>
             </Col>
-            <Col xs={12} md={2} className="px-0">
+            <Col xs={12} md className="px-0">
               <div className="bg-secondary px-2 py-1 fs-5 w-75 text-light">Strive Student</div>
               <p className="text-secondary fs-5 mt-5">Language:</p>
               <select className="bg-black rounded-0 text-light" name="Language" id="Language">
@@ -34,7 +34,7 @@ class Account extends Component {
               </select>
               <hr />
               <p className="text-secondary fs-5">Maturity Settings:</p>
-              <button className="text-light darker border-0 px-3 py-1 mb-3">ALL MATURITY RATINGS</button>
+              <button className="text-light border-0 px-3 py-1 mb-3 bg-secondary">ALL MATURITY RATINGS</button>
               <p>
                 Show titles of <b>all maturity ratings</b> for this profile
               </p>
