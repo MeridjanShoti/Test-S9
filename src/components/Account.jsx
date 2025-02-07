@@ -27,38 +27,42 @@ class Account extends Component {
             <Col xs={12} md className="px-0">
               <div className="bg-secondary px-2 py-1 fs-5 w-75 text-light">Strive Student</div>
               <p className="text-secondary fs-5 mt-5">Language:</p>
-              <select className="bg-black rounded-0 text-light" name="Language" id="Language">
+              <select className="bg-black text-light">
                 <option value="English">English</option>
                 <option value="Italiano">Italiano</option>
                 <option value="Shqip">Shqip</option>
               </select>
-              <hr />
+              <hr className="text-secondary" />
               <p className="text-secondary fs-5">Maturity Settings:</p>
               <button className="text-light border-0 px-3 py-1 mb-3 bg-secondary">ALL MATURITY RATINGS</button>
-              <p>
+              <p className="text-light">
                 Show titles of <b>all maturity ratings</b> for this profile
               </p>
               <button className="border border-secondary text-secondary bg-dark px-3">EDIT</button>
-              <hr />
+              <hr className="text-secondary" />
               <p className="text-secondary fs-5">Autoplay Controls</p>
               <input
                 type="checkbox"
                 id="nextEpisode"
                 className="form-check-input rounded-0 border border-secondary bg-secondary bg-dark p-2 fw-bold"
               />
-              <label htmlFor="nextEpisode">Autoplay next episode in a series on all devices</label>
+              <label className="text-light ms-1" htmlFor="nextEpisode">
+                Autoplay next episode in a series on all devices
+              </label>
               <br />
               <input
                 type="checkbox"
                 id="previews"
                 className="form-check-input rounded-0 border border-secondary bg-secondary bg-dark p-2 fw-bold"
               />
-              <label htmlFor="previews">Autoplay previews while browsing on all devices</label>
+              <label className="text-light ms-1" htmlFor="previews">
+                Autoplay previews while browsing on all devices
+              </label>
             </Col>
           </Row>
-          <div className="row">
-            <div className="col-12">
-              <hr />
+          <Row>
+            <Col xs={12}>
+              <hr className="text-secondary" />
               <div className="d-flex justify-content-center justify-content-md-between flex-wrap flex-md-nowrap gap-2">
                 <button className="px-2 w-75 w-md-25 fs-6 fw-bold border border-black bg-light">SAVE</button>
                 <button className="px-2 w-75 w-md-25 fs-6 text-light border border-secondary bg-dark">CANCEL</button>
@@ -66,8 +70,8 @@ class Account extends Component {
                   DELETE PROFILE
                 </button>
               </div>
-            </div>
-          </div>
+            </Col>
+          </Row>
         </Container>
       </>
     );
