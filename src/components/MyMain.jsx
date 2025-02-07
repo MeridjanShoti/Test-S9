@@ -2,6 +2,8 @@ import { Component } from "react";
 import { Col, Container, Dropdown, Row } from "react-bootstrap";
 import { GridFill, TextLeft } from "react-bootstrap-icons";
 
+import MyFilmRow from "./MyFilmRow";
+
 class MyMain extends Component {
   render() {
     return (
@@ -42,15 +44,15 @@ class MyMain extends Component {
           <div className="col text-start text-light">
             <h2 className="fs-5">Trending Now</h2>
           </div>
-          <p className="text-white">PLACEHOLDER CAROSELLO</p>
+          <MyFilmRow search="scary%20movie" />
           <div className="col text-start text-light">
             <h2 className="fs-5">Watch It Again</h2>
           </div>
-          <p className="text-white">PLACEHOLDER CAROSELLO</p>
+          <MyFilmRow search="shrek" />
           <div className="col text-start text-light">
             <h2 className="fs-5">New Releases</h2>
           </div>
-          <p className="text-white">PLACEHOLDER CAROSELLO</p>
+          <MyFilmRow search="matrix" />
         </Row>
       </Container>
     );

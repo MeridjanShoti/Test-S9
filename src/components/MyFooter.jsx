@@ -1,3 +1,4 @@
+import { Col, Row } from "react-bootstrap";
 import { Facebook, Instagram, Twitter, Youtube } from "react-bootstrap-icons";
 
 function MyFooter() {
@@ -10,8 +11,8 @@ function MyFooter() {
           <Twitter />
           <Youtube />
         </div>
-        <div className="row">
-          <div className="col-6 col-md-3">
+        <Row className="row">
+          <Col xs={6} md={3}>
             <ul className="px-0">
               <li>
                 <a href="#" className="text-secondary text-decoration-none">
@@ -34,8 +35,8 @@ function MyFooter() {
                 </a>
               </li>
             </ul>
-          </div>
-          <div className="col-6 col-md-3">
+          </Col>
+          <Col xs={6} md={3}>
             <ul className="px-0">
               <li>
                 <a href="#" className="text-secondary text-decoration-none">
@@ -53,8 +54,8 @@ function MyFooter() {
                 </a>
               </li>
             </ul>
-          </div>
-          <div className="col-6 col-md-3">
+          </Col>
+          <Col xs={6} md={3}>
             <ul className="px-0">
               <li>
                 <a href="#" className="text-secondary text-decoration-none">
@@ -72,8 +73,8 @@ function MyFooter() {
                 </a>
               </li>
             </ul>
-          </div>
-          <div className="col-6 col-md-3">
+          </Col>
+          <Col xs={6} md={3}>
             <ul className="px-0">
               <li>
                 <a href="#" className="text-secondary text-decoration-none">
@@ -91,14 +92,14 @@ function MyFooter() {
                 </a>
               </li>
             </ul>
-          </div>
+          </Col>
           <div>
             <button type="button" className="btn btn-outline-secondary bg-dark mb-3 rounded-0">
               Service Code
             </button>
           </div>
-          <p>&copy; 1997-2019 Netflix, Inc &#123;i-0d00fcda2fdf9c0de&#124;</p>
-        </div>
+          <p>&copy; 1997-2019 Netflix, Inc &#123;i-0d00fcda2fdf9c0de&#125;</p>
+        </Row>
       </footer>
     </>
   );

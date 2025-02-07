@@ -22,9 +22,7 @@ class MyNavBar extends Component {
       <Navbar expand="lg" className="bg-dark navbar-dark">
         <Container>
           <Navbar.Brand href="#home">
-            <a href="index.html">
-              <img src={logo} alt="logo" width="100px" />
-            </a>
+            <img src={logo} alt="logo" width="100px" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" className="border border-white" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -45,7 +43,7 @@ class MyNavBar extends Component {
                 My List
               </Nav.Link>
             </Nav>
-            <Form inline className="d-flex ms-auto">
+            <Form className="d-flex ms-auto">
               <Search className="text-white align-self-center fs-4 mx-2" onClick={this.showSearch} />
 
               <Row className="me-auto align-items-center">
