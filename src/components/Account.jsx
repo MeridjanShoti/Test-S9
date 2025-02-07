@@ -1,24 +1,31 @@
 import { Component } from "react";
-
+import propic from "../assets/avatar.png";
+import { PencilFill } from "react-bootstrap-icons";
+import { Col, Container, Navbar, Row } from "react-bootstrap";
+import logo from "../assets/netflix_logo.png";
 class Account extends Component {
   render() {
     return (
       <>
-        {" "}
-        <div className="container w-40 mt-5">
+        <Navbar expand="lg" className="bg-dark navbar-dark">
+          <Navbar.Brand href="#home">
+            <img src={logo} alt="logo" width="100px" />
+          </Navbar.Brand>
+        </Navbar>
+        <Container className="w-50 mt-5">
           <h1>EDIT PROFILE</h1>
           <hr />
-          <div className="row pt-2 gap-3">
-            <div className="col-12 col-md-2 px-0">
+          <Row className="row pt-2 gap-3">
+            <Col xs={12} md={2} className="px-0">
               <div className="px-0 position-relative">
-                <img className="img-fluid" src="./assets/avatar.png" alt="propic" />
-                <div className="bg-black position-absolute rounded-circle matita d-flex justify-content-center align-items-center bottom-0 left-0 m-2 border border-light border-1">
-                  <i className="bi bi-pencil-fill"></i>
+                <img className="img-fluid" src={propic} alt="propic" />
+                <div className="bg-black position-absolute rounded-circle matita d-flex justify-content-center align-items-center bottom-0 left-0 m-2 border border-light border-1 p-1">
+                  <PencilFill />
                 </div>
               </div>
-            </div>
-            <div className="col-12 col-md px-0">
-              <div className="bg-secondary px-2 py-1 fs-5 w-75">Strive Student</div>
+            </Col>
+            <Col xs={12} md={2} className="px-0">
+              <div className="bg-secondary px-2 py-1 fs-5 w-75 text-light">Strive Student</div>
               <p className="text-secondary fs-5 mt-5">Language:</p>
               <select className="bg-black rounded-0 text-light" name="Language" id="Language">
                 <option value="English">English</option>
@@ -39,7 +46,7 @@ class Account extends Component {
                 id="nextEpisode"
                 className="form-check-input rounded-0 border border-secondary bg-secondary bg-dark p-2 fw-bold"
               />
-              <label htmlFor="next">Autoplay next episode in a series on all devices</label>
+              <label htmlFor="nextEpisode">Autoplay next episode in a series on all devices</label>
               <br />
               <input
                 type="checkbox"
@@ -47,8 +54,8 @@ class Account extends Component {
                 className="form-check-input rounded-0 border border-secondary bg-secondary bg-dark p-2 fw-bold"
               />
               <label htmlFor="previews">Autoplay previews while browsing on all devices</label>
-            </div>
-          </div>
+            </Col>
+          </Row>
           <div className="row">
             <div className="col-12">
               <hr />
@@ -61,7 +68,7 @@ class Account extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </>
     );
   }

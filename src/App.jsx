@@ -14,7 +14,7 @@ function App() {
       
     </div> */}
 
-      <div style={{ minHeight: "100vh" }} className="d-flex flex-column">
+      <div style={{ minHeight: "100vh" }} className="d-flex flex-column bg-dark">
         <Account />
       </div>
     </>
