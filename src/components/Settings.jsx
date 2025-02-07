@@ -93,7 +93,7 @@ class Settings extends Component {
             <Row>
               <Col className="text-start text-black fw-bold">
                 <span>
-                  <img src={propic} alt="propic" className="logo" />
+                  <img src={propic} alt="propic" className="logo pe-2" width={"40px"} />
                 </span>
                 Strive Student
               </Col>
