@@ -38,6 +38,20 @@ class MyMain extends Component {
             </div>
           </Col>
         </Row>
+        <Row>
+          <div className="col text-start text-light">
+            <h2 className="fs-5">Trending Now</h2>
+          </div>
+          <p className="text-white">PLACEHOLDER CAROSELLO</p>
+          <div className="col text-start text-light">
+            <h2 className="fs-5">Watch It Again</h2>
+          </div>
+          <p className="text-white">PLACEHOLDER CAROSELLO</p>
+          <div className="col text-start text-light">
+            <h2 className="fs-5">New Releases</h2>
+          </div>
+          <p className="text-white">PLACEHOLDER CAROSELLO</p>
+        </Row>
       </Container>
     );
   }
